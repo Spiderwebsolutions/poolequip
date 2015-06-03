@@ -1,0 +1,51 @@
+#about {
+  h2 {
+    color: $blue;
+  }
+  ul {
+    margin-top: 20px;
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+    li {
+      padding: 20px;
+      background: $border;
+      margin-bottom: 4px;
+      @include media($mobile) {
+        width: 90%;
+      }
+    }
+    #title {
+      margin-right: 0px;
+      padding: 20px;
+      background: $blue;
+      color: white;
+      margin-left: 60px;
+      width: calc(90% - 11px);
+      &:before {
+        font-family: 'icomoon';
+        margin: 0px 18px 0 -80px;
+        color: white;
+        content: "\e970";
+        background: #018cbc;
+        background-size: 60px 60px;
+        padding: 22px 20px 21px 22px;
+        top: 2px;
+        position: relative;
+        border-right: 4px solid white;
+      }
+      @include media($tablet) {
+        width: calc(90% - 28px);
+      }
+      @include media($mobile) {
+        width: calc(90% - 60px);
+        font-size: 13px;
+        padding: 20px 10px;
+        &:before {
+          margin: 0px 18px 0 -70px;
+          border-right: 0px solid white;
+        }
+      }
+    }
+  }
+}

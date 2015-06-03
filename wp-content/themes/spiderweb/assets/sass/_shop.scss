@@ -1,0 +1,177 @@
+.woocommerce-message {
+  display: none;
+}
+.container {
+  margin-top: 0;
+  .shop-title {
+    @include span-columns(9);
+    @include omega();
+    background-color: $light-blue;
+    height: 70px;
+    margin-bottom: 10px;
+    h1 {
+      padding-left: 20px;
+      line-height: 70px;
+      color: white;
+      display: inline;
+    }
+    p {
+      display: inline;
+      color: #235672;
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+      height: auto;
+      h1 {
+        margin: 0px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+        line-height: 55px;
+      }
+      p {
+        margin: 0px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 10px
+      }
+    }
+    @include media($tablet) {
+      @include span-columns(8);
+      @include omega();
+    }
+    @include media($mobile) {
+      margin-top: 10px;
+      @include span-columns(12);
+      @include omega();
+    }
+  }
+  .products {
+    @include span-columns(9);
+    @include omega();
+    .attachment-200 {
+      width: 200px;
+      height: auto;
+    }
+    .shop-product {
+      @include span-columns(2.25 of 9);
+      @include omega(4n);
+      border: 1px solid $border;
+      margin-bottom: 10px;
+      padding: 5px;
+      text-align: center;
+      h3 {
+        margin-top: 0px;
+        color: $text;
+        font-size: 14px;
+        letter-spacing: 1px;
+        min-height: 34px;
+        margin-bottom: 5px;
+      }
+      button {
+        border-radius: 3px;
+        width: 90%;
+        border: 0;
+        color: white;
+        font-family: 'Myriad', sans-serif;
+        font-weight: bold;
+        padding: 2px;
+        margin-bottom: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      span {
+        color: $light-blue;
+        font-weight: bold;
+        line-height: 25px;
+      }
+      .email-price {
+        background-color: $light-orange;
+        border-bottom: 3px solid $orange;
+        transition: all 0.2s ease;
+        margin-bottom: 0px;
+        &:hover {
+          background-color: #d66d3f;
+          border-bottom: 3px solid #894530;
+        }
+      }
+      .view-item {
+        margin-top: 5px;
+        padding: 8px;
+        background-color: $light-blue;
+        border-bottom: 3px solid $blue;
+        transition: all 0.2s ease;
+        &:hover {
+          background-color: $blue;
+          border-bottom: 3px solid #0e4a74;
+        }
+      }
+      @include media($tablet-landscape) {
+        @include omega-reset(4n);
+        @include span-columns(3 of 9);
+        @include omega(3n);
+      }
+      @include media($tablet) {
+        @include span-columns(4 of 8);
+        @include omega-reset(3n);
+        @include omega(2n);
+      }
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+    }
+    @include media($tablet) {
+      @include span-columns(8);
+      @include omega();
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
+  .pagination {
+    @include span-columns(9);
+    @include shift(3);
+    @include omega();
+    text-align: center;
+    margin-top: 20px;
+    ul {
+      padding-left: 0px;
+      list-style: none;
+      li {
+        display: inline;
+        a {
+          padding: 5px 10px;
+          background: $blue;
+          color: white;
+          transition: all 0.2s ease;
+          &:hover {
+            background: $light-blue;
+          }
+          @include media($mobile) {
+            padding: 2px 6px;
+          }
+        }
+      }
+      .active {
+        a {
+          border-radius: 50%;
+          background: $light-blue;
+        }
+      }
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+      @include shift(0);
+    }
+  }
+  .details, .specifications, .reviews {
+    @include span-columns(12);
+  }
+  @include media($tablet-landscape) {
+    margin: 10px;
+  }
+}

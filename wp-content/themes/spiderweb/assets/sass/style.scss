@@ -1,0 +1,153 @@
+/*
+ Theme Name:   Poolequip
+ Theme URI:    http://spiderwebsolutions.com.au
+ Description:  Poolequip Custom Theme
+ Author:       Daniel Gouvignon
+ Author URI:   http://spiderwebsolutions.com.au
+ Template:     Spiderweb
+ Version:      1.0.0
+ License:      Copyright 2015 - Spiderweb Solutions
+ License URI:  http://spiderwebsolutions.com.au
+ Tags:         custom, responsive-layout
+ Text Domain:  spiderweb
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Colors */
+$grey: #343538;
+$light-blue: #018cbc;
+$blue: #0e618f;
+$light-orange: #fe7343;
+$orange: #ae5333;
+$headers: white;
+$text: #6f6f6f;
+$border: #dddddd;
+$white: #e9e9e9;
+
+
+//Import bourbon and neat.
+@import "bourbon/bourbon";
+@import "settings";
+@import "neat/neat";
+
+/* General */
+a {
+	text-decoration: none !important;
+    color: $text;
+}
+article {
+	@include outer-container;
+}
+body {
+	margin: 0px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Myriad', sans-serif;
+	letter-spacing: 2px;
+	color: $headers;
+}
+hr {
+	border-top: 1px solid #ccc;
+}
+p, span, div {
+    font-family: 'Myriad', sans-serif;
+	color: $text;
+}
+span {
+	display: inline;
+}
+.wrap {
+	width: $max-width;
+	margin: 0 auto;
+}
+
+address, button, h1, h2, h3, h4, h5, input, p, ul  {
+	@include media($tablet) {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+img {
+	@include media($tablet) {
+		margin-left: 5px;
+	}
+}
+
+/* Grid */
+aside {
+	margin-top: 20px;
+	margin-bottom:20px;
+	@include span-columns(3);
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include outer-container();
+}
+.content {
+  margin-top: 20px;
+  @include span-columns(10);
+  @include shift(1);
+}
+.content-half {
+  @include span-columns(5 of 10);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}
+.half {
+  @include span-columns(6);
+  @include omega(2n);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}
+.one_third {
+	margin-top: 20px;
+	margin-bottom:20px;
+	@include span-columns(4);
+	@include media($mobile) {
+		padding-left: 20px;
+		padding-right: 20px;
+		@include span-columns(4);
+	}
+}
+.two_third {
+	margin-top: 20px;
+	margin-bottom:20px;
+	@include span-columns(8);
+	@include media($mobile) {
+		padding-left: 20px;
+		padding-right: 20px;
+		@include span-columns(4);
+	}
+}
+
+/* Mixins */
+@mixin box-shadow($x, $y, $blur, $rgba) {
+	-webkit-box-shadow: $x $y $blur 0px $rgba;
+	-moz-box-shadow:    $x $y $blur 0px $rgba;
+	box-shadow:         $x $y $blur 0px $rgba;
+}
+@mixin box-shadow-side($x, $y, $blur, $offset, $rgba) {
+  -webkit-box-shadow: $x $y $blur $offset $rgba, -$x $y $blur $offset $rgba;
+  -moz-box-shadow:    $x $y $blur $offset $rgba, -$x $y $blur $offset $rgba;
+  box-shadow:         $x $y $blur $offset $rgba, -$x $y $blur $offset $rgba;
+}
+@mixin inner-shadow($x, $y, $blur, $rgba) {
+	-webkit-box-shadow: inset $x $y $blur 0px $rgba;
+	-moz-box-shadow:    inset $x $y $blur 0px $rgba;
+	box-shadow:         inset $x $y $blur 0px $rgba;
+}
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+//Imports
+@import 'fonts', 'header', 'home', 'footer', 'about', 'contact', 'shop', 'breadcrumbs', 'aside', 'modal', 'product', 'cart';

@@ -1,0 +1,242 @@
+.product {
+  text-align: center;
+  h1 {
+    margin-top: 20px;
+    background-color: $light-blue;
+    padding: 21px;
+    font-size: 20px;
+    @include media($tablet) {
+      margin: 10px 0px;
+    }
+  }
+  h3 {
+    margin: 0px;
+    color: $text;
+    background-color: #f5f5f5;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: Myriad, sans-serif;
+  }
+  button {
+    border-radius: 3px;
+    width: 100%;
+    border: 0px;
+    color: white;
+    font-family: 'Myriad', sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    background-color: $light-orange;
+    border-bottom: 3px solid $orange;
+    transition: all 0.2s ease;
+    margin: 20px 0px;
+    padding: 10px;
+    &:hover {
+      cursor: pointer;
+      background-color: #d66d3f;
+      border-bottom: 3px solid #894530;
+    }
+    @include media($mobile) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+    }
+  }
+  .product-image {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 375px;
+    @include media($mobile) {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .sample-image {
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 1px solid $border;
+    &:hover {
+      border: 1px solid $light-blue;
+    }
+  }
+  .price {
+    @include span-columns(3 of 6);
+    border: 1px solid $border;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    span {
+      margin: 0px;
+      width: 100%;
+      padding: 20px;
+      border: 0px;
+      text-align: center;
+      font-family: Myriad, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: $light-blue;
+    }
+    @include media($tablet) {
+      span {
+        padding: 29px;
+
+      }
+    }
+    @include media($mobile) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+    }
+  }
+  .shipping {
+    @include span-columns(3 of 6);
+    @include omega();
+    border: 1px solid $border;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h4 {
+      text-align: center;
+      color: $light-orange;
+    }
+    @include media($mobile) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+    }
+  }
+  .description {
+    border: 1px solid $border;
+    text-align: left;
+    margin-top: 10px;
+    div {
+      padding: 10px 20px;
+      b {
+        color: $light-blue;
+      }
+    }
+    @include media($mobile) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+    }
+  }
+  .details {
+  @include span-columns(12);
+    position: relative;
+    text-align: left;
+    margin-top: 30px;
+    h3 {
+      padding-left: 20px;
+      display: inline-block;
+      z-index: 100;
+      border: 1px solid $border;
+      border-bottom: 0px;
+      transition: all 0.3s ease;
+      background-color: $border;
+      &:hover {
+        background-color: $white;
+        cursor: pointer;
+      }
+    }
+    .review {
+      border-left: 0px;
+    }
+    .active {
+      background-color: rgb(245, 245, 245);
+    }
+    div {
+      padding: 0px 20px;
+      border: 1px solid $border;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0px;
+      li {
+        background: url('./assets/art/star-5.png') no-repeat top left;
+        height: 14px;
+        padding-left: 93px;
+        left: -20px;
+        position: relative;
+        margin-top: 5px;
+      }
+    }
+    .star-4 {
+      background: url('./assets/art/star-4.png') no-repeat top left;    }
+    .star-3  {
+      background: url('./assets/art/star-3.png') no-repeat top left;    }
+    .star-2  {
+      background: url('./assets/art/star-2.png') no-repeat top left;    }
+    .star-1  {
+      background: url('./assets/art/star-1.png') no-repeat top left;    }
+    span {
+      &:before {
+        content: "";
+        display: block;
+        background: url('./assets/art/blank-star.png') no-repeat;
+        width: 13px;
+        height: 14px;
+        float: left;
+        margin: 0 6px 0 0;
+      }
+    }
+    input[type="text"] {
+      margin-right: 5px;
+      border: 2px solid #dddddd;
+      border-radius: 4px;
+      padding: 5px 40px 5px 5px;
+      width: 50%;
+      @include media($mobile) {
+        margin: 10px 20px;
+        width: 90%;
+        margin-left: 0px;
+      }
+    }
+    input[type="submit"] {
+      border-radius: 3px;
+      margin-top: 5px;
+      padding: 8px 18px;
+      background-color: $light-blue;
+      border: 0px;
+      border-bottom: 3px solid $blue;
+      color: white;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: $blue;
+        border-bottom: 3px solid #0e507b;
+      }
+      @include media($mobile) {
+        margin-left: 0px;
+      }
+    }
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      border: 0px;
+      display: inline;
+      padding-left: 0px;
+      @include media($mobile) {
+        margin: 10px 20px 0px 0px;
+        display: block;
+      }
+    }
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+      background: url('./assets/art/solid-star.png') no-repeat;
+    }
+    @include media($mobile) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+      ul {
+        margin-left: 0px;
+        li {
+          height: auto;
+        }
+      }
+    }
+  }
+}

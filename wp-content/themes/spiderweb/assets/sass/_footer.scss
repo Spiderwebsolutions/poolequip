@@ -1,0 +1,155 @@
+.suppliers {
+  @include media($mobile) {
+    display: none;
+  }
+  height: 190px;
+  background-color: #f6f6f6;
+  border-top: solid 1px $border;
+  div {
+    background: url('./assets/art/suppliers.png') no-repeat center;
+    @include outer-container();
+    .supplier {
+      cursor: pointer;
+      height: 190px;
+      @include span-columns(2);
+      @include omega(8n);
+      background-repeat: no-repeat;
+      transition: background 0.2s ease;
+      @include media($mobile) {
+        @include span-columns(3);
+      }
+    }
+    #s-1 {
+      background: url('./assets/art/s-1-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-1-c.png') no-repeat center;
+      }
+    }
+    #s-2 {
+      background: url('./assets/art/s-2-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-2-c.png') no-repeat center;
+      }
+    }
+    #s-3 {
+      background: url('./assets/art/s-3-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-3-c.png') no-repeat center;
+      }
+    }
+    #s-4 {
+      background: url('./assets/art/s-4-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-4-c.png') no-repeat center;
+      }
+    }
+    #s-5 {
+      background: url('./assets/art/s-5-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-5-c.png') no-repeat center;
+      }
+    }
+    #s-6 {
+      background: url('./assets/art/s-6-b.png') no-repeat center;
+      background-size: 100% auto;
+      &:hover {
+        background: url('./assets/art/s-6-c.png') no-repeat center;
+      }
+    }
+  }
+}
+footer {
+  padding: 40px 30%;
+  text-align: center;
+  color: $white;
+  background: -webkit-radial-gradient(#333538, #1d1c1d); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#333538, #1d1c1d); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#333538, #1d1c1d); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#333538, #1d1c1d); /* Standard syntax (must be last) */
+  a, p, span {
+    color: $white;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  span {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  a {
+    p {
+      margin: 8px auto;
+      font-size: 20px;
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+  @include media($mobile) {
+    p {
+      font-size: 16px;
+      span {
+        font-size: 16px;
+      }
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+.footer-links {
+  text-align: center;
+  border-top: solid 1px #8d8d8d;
+  background-color: #0f1622;
+  padding: 20px;
+  p {
+    color: $white;
+    font-family: 'Myriad', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding-bottom: 5px;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  ul {
+    padding: 0px;
+    li {
+      color: white;
+      font-family: 'Myriad', sans-serif;
+      list-style-type:none;
+      display: inline;
+      font-size: 16px;
+      margin-left: 10px;
+      a {
+        font-stretch: ultra-condensed;
+        color: white;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+      &:before {
+        content: "\f111\00a0\00a0\00a0";
+        font-family: 'icomoon';
+        font-size: 12px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      }
+      &:first-child:before {
+        content: none;
+      }
+    }
+  }
+}

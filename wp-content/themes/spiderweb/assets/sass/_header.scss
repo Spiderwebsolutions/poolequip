@@ -1,0 +1,276 @@
+nav {
+  background-color: $grey;
+  div {
+    @include outer-container();
+    ul {
+      float: left;
+      height: 45px;
+      margin: 0px;
+      text-decoration: none;
+      padding-left: 0px;
+      .current_page_item {
+        background-color: $light-blue;
+      }
+      li {
+        margin: 0px;
+        line-height: 45px;
+        line-height: 45px;
+        padding: 13px 25px;
+        display: inline;
+        font-family: 'Myriad', sans-serif;
+        a {
+          color: white;
+        }
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $light-blue;
+        }
+        @include media($mobile) {
+          padding: 13px 15px;
+        }
+      }
+    }
+    .icon-search {
+      color: white;
+      display: inline;
+      float: right;
+      padding: 14px 20px;
+      background-color: #303134;
+      left: 0px;
+      width: 56px;
+      position: relative;
+      transition: all 0.5s ease;
+      transition:width 0.25s;
+      -webkit-transition:width .25s;
+      -moz-transition: width 0.25s;
+      &:hover {
+        background-color: black;
+        width: 250px;
+      }
+      @include media($mobile) {
+        display: none;
+      }
+    }
+  }
+  @include media($mobile) {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    ul {
+      width: 100%;
+      li {
+        width: 25%;
+      }
+    }
+  }
+}
+.logo {
+  @include outer-container();
+  img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+  }
+  .contact-cart {
+    text-align: right;
+    .phone {
+      a {
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        line-height: 164px;
+        color: $blue;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 35px;
+        span {
+          top: 0px;
+          transition: all 0.5s ease;
+          color: $blue;
+        }
+        &:hover {
+          span {
+            color: $light-blue;
+          }
+        }
+      }
+      @include span-columns(5 of 6);
+      @include media($tablet-landscape) {
+        text-align: left;
+        @include span-columns(4 of 6);
+      }
+      @include media($mobile) {
+        text-align: center;
+        padding-right: 10px;
+        a {
+          position:relative;
+          top: -25px;
+          font-size: 25px;
+          line-height: 50px;
+        }
+        @include span-columns(12);
+
+      }
+    }
+    .cart {
+      @include span-columns(1 of 6);
+      @include media($mobile) {
+        display: none;
+      }
+      span {
+        font-size: 30px;
+        line-height: 146px;
+        position: relative;
+        margin: 10px;
+      }
+      .icon-cart {
+        font-size: 24px;
+        padding: 12px 12px 12px 11px;
+        border-radius: 50%;
+        background-color: $blue;
+        color: white;
+        margin-left: 30px;
+        transition: all 0.2s ease;
+        &:hover {
+          background-color: $light-blue;
+          color: $blue;
+        }
+      }
+      p {
+        position: relative;
+        display: inline;
+        font-size: 20px;
+        background: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding: 3px 8px 2px 9px;
+        top: -25px;
+        left: -29px;
+        text-align: center;
+        z-index: 100;
+        font-size: 17px;
+        font-weight: bold;
+        border: 1px solid rgba(14, 97, 143, 0.2);
+      }
+      @include media($mobile) {
+        display: block;
+        position: fixed;
+        z-index: 300;
+        bottom: -20px;
+        right: 10px;
+        p {
+          margin-left: 0px;
+        }
+      }
+      @include media($tablet-landscape) {
+        text-align: left;
+        p {
+          margin-left: 0px;
+        }
+        @include span-columns(2 of 6);
+      }
+    }
+    #large {
+      padding: 5px 8px 4px 8px;
+    }
+    @include media($mobile) {
+      height: 10px;
+      text-align: left;
+      .phone {
+        font-size: 15px;
+      }
+    }
+  }
+  @include media($mobile) {
+    padding-top: 30px;
+  }
+}
+.category-headers {
+  @include media($mobile) {
+    display: none;
+  }
+  height: 60px;
+  background-color: $blue;
+  div {
+    @include outer-container();
+    ul {
+      padding: 0px;
+      text-decoration: none;
+      table-layout: fixed;
+      width: 100%;
+      max-height: 60px !important;
+      li {
+        height: 60px;
+        padding: 0px;
+        width: 10%;
+        display: inline-block;
+        text-align: center;
+        line-height: 60px;
+        a {
+          font-size: 16px;
+          color: white;
+        }
+        transition: all 0.2s ease;
+        &:hover {
+          background-color: $light-blue;
+        }
+      }
+      #c-1 {&:hover {a {&:after {content: url("./assets/art/cat-1.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-2 {&:hover {a {&:after {content: url("./assets/art/cat-2.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-3 {&:hover {a {&:after {content: url("./assets/art/cat-3.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-4 {&:hover {a {&:after {content: url("./assets/art/cat-4.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-5 {&:hover {a {&:after {content: url("./assets/art/cat-5.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-6 {&:hover {a {&:after {content: url("./assets/art/cat-6.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-7 {&:hover {a {&:after {content: url("./assets/art/cat-7.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-8 {&:hover {a {&:after {content: url("./assets/art/cat-8.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-9 {&:hover {a {&:after {content: url("./assets/art/cat-9.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      #c-10 {&:hover {a {&:after {content: url("./assets/art/cat-10.png");left: -40px;top: 65px;position: absolute;z-index: 100;}}}}
+      .high {
+        background-color: $blue;
+        top: -5px;
+        border-radius: 5px;
+        position: relative;
+        height: 70px;
+        padding-top: 5px;
+        @include box-shadow-side(5px, 0px, 10px, -4px, rgba(12, 65, 94, 0.5));
+      }
+      .low {
+        top: -5px;
+        position: relative;
+      }
+      .active {
+        background-color: $light-blue;
+      }
+    }
+    @include media($tablet) {
+      ul {
+        margin-left: 0px;
+        li {
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+.category-mobile {
+  display: none;
+  text-align: center;
+  background: url("./assets/art/suppliers.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 115px;
+  select {
+    width: 50%;
+    padding: 7px;
+    border: 1px solid $border;
+    font-family: 'Myriad', sans-serif;
+  }
+  @include media($mobile) {
+    display: block;
+  }
+}

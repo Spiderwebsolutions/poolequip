@@ -1,0 +1,118 @@
+.cart {
+  h1 {
+    background-color: $blue;
+    padding: 10px 30px;
+    margin-top: 30px;
+    color: white;
+  }
+  h2 {
+    color: $light-blue;
+  }
+
+  .actions, .cart-collaterals {
+    @include span-columns(12);
+    .cart_totals {
+      float: right;
+    }
+  }
+
+  .includes_tax {
+    display: block;
+  }
+  .order-total {
+    font-size: 20px;
+    strong {
+      font-size: 25px;
+    }
+    .includes_tax {
+      font-size: 14px;
+    }
+  }
+
+  .wc-proceed-to-checkout {
+    margin-top: 20px;
+    .checkout-button {
+      border-radius: 3px;
+      width: 100%;
+      border: 0px;
+      color: white;
+      font-family: 'Myriad', sans-serif;
+      font-weight: bold;
+      padding: 2px;
+      background-color: $light-orange;
+      border-bottom: 3px solid $orange;
+      transition: all 0.2s ease;
+      padding: 10px 70px;
+      &:hover {
+        background-color: #d66d3f;
+        border-bottom: 3px solid #894530;
+      }
+    }
+  }
+
+  .cart-product {
+    position: relative;
+    @include span-columns(6);
+    @include omega(2n);
+    border: 1px solid $border;
+    margin-bottom: 20px;
+    .thumbnail, .name, .price, .quantity, .subtotal {
+      float: right;
+      display: block;
+    }
+    .thumbnail {
+      float: left;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: left;
+      position: absolute;
+      width: 100%;
+      padding: 30px 50px;
+      padding: 30px 26px 30px 211px;
+      text-align: center;
+    }
+    .price, .quantity, .subtotal {
+      margin-top: 100px;
+      margin-right: 30px;
+      float: right;
+    }
+    .subtotal {
+      margin-right: 80px;
+    }
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .remove {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      a {
+        background-color: $border;
+        padding: 2px 6px 3px 6px;
+        color: white;
+        &:hover {
+          background-color: $light-orange;
+        }
+      }
+    }
+    input {
+      width: 35px;
+      padding: 2px 5px;
+      padding-right: 0px;
+    }
+    input[type="submit"] {
+      width: 55px;
+      border: 1px solid #b4b4b4;
+      background-color: #b4b4b4;
+      color: white;
+      padding: 4px;
+    }
+    .thumbnail {
+      padding: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,122 @@
+.breadcrumbs {
+  margin-top: 20px;
+  @include outer-container();
+  ul {
+    padding-left: 0px;
+    list-style: none;
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: 10px;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0 10px 20px;
+        background: $light-blue;
+        position: relative;
+        display: block;
+        float: left;
+        &:after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 25px solid transparent;
+          border-bottom: 25px solid transparent;
+          border-left: 20px solid $light-blue;
+          position: absolute;
+          top: 50%;
+          margin-top: -25px;
+          left: 100%;
+          z-index: 2;
+          @include media($tablet) {
+            border-top: 13px solid transparent;
+            border-bottom: 14px solid transparent;
+            border-left: 10px solid $light-blue;
+            z-index: 2;
+            left: calc(100% - 1px);
+            top: 50%;
+            margin-top: -14px;
+            &:hover {
+              &:after {
+                border-left: 20px solid $blue;
+              }
+            }
+          }
+        }
+        &:before {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-bottom: 30px solid transparent;
+          border-left: 25px solid white;
+          position: absolute;
+          top: 50%;
+          margin-top: -30px;
+          margin-left: -5px;
+          left: 110%;
+          z-index: 1;
+          @include media($tablet) {
+            border-top: 19px solid transparent;
+            border-bottom: 19px solid transparent;
+            border-left: 13px solid white;
+            margin-top: -19px;
+            margin-left: -5px;
+            &:hover {
+              &:after {
+                border-left: 13px solid $blue;
+              }
+            }
+          }
+        }
+        &:hover {
+          background-color: $blue;
+          &:after {
+            border-left: 20px solid $blue;
+          }
+        }
+        @include media($tablet-landscape) {
+          padding: 7px 0 7px 17px;
+          font-size: 13px;
+
+        }
+        @include media($tablet) {
+          font-size: 11px;
+          padding: 7px 7px 7px 12px;
+          &:hover {
+            background-color: $blue;
+            &:after {
+              border-left: 20px solid $blue;
+            }
+          }
+        }
+      }
+      &:last-child {
+        a {
+          padding-right: 10px;
+          &:before {
+            border: 0px;
+          }
+          &:after {
+            border: 0px;
+          }
+        }
+      }
+      .empty {
+        display: none;
+      }
+      @include media($tablet) {
+        margin: 10px 0px;
+        padding: 0px 1px;
+      }
+    }
+    @include media($tablet-landscape) {
+      margin: 0px;
+    }
+  }
+  @include media($mobile) {
+    display: none;
+  }
+}

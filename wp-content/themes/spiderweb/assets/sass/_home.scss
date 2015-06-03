@@ -1,0 +1,103 @@
+#home {
+  div {
+    margin-top: 20px;
+    @include span-columns(6);
+    @include omega();
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    #c-1 {background: url("./assets/art/c-1.png") no-repeat right; background-size: auto 100%;}
+    #c-2 {background: url("./assets/art/c-2.png") no-repeat right; background-size: auto 100%;}
+    #c-3 {background: url("./assets/art/c-3.png") no-repeat right; background-size: auto 100%;}
+    #c-4 {background: url("./assets/art/c-4.png") no-repeat right; background-size: auto 100%;}
+    #c-5 {background: url("./assets/art/c-5.png") no-repeat right; background-size: auto 100%;}
+    #c-6 {background: url("./assets/art/c-6.png") no-repeat right; background-size: auto 100%;}
+    #c-7 {background: url("./assets/art/c-7.png") no-repeat right; background-size: auto 100%;}
+    #c-8 {background: url("./assets/art/c-8.png") no-repeat right; background-size: auto 100%;}
+    #c-9 {background: url("./assets/art/c-9.png") no-repeat right; background-size: auto 100%;}
+    #c-10 {background: url("./assets/art/c-10.png") no-repeat right; background-size: auto 100%;}
+    .category {
+      width: 95%;
+      margin: 10px;
+      height: 155px;
+      border: 1px solid $border;
+      padding-left: 20px;
+      background-position: right;
+      transition: all 0.5s ease;
+      img {
+        display: inline;
+        bottom: 155px;
+        left: 0px;
+        position: relative;
+        width: 100%;
+      }
+      h4 {
+        letter-spacing: 3px;
+        display: inline;
+        display: inline;
+        color: $blue;
+        font-size: 40px;
+        line-height: 155px;
+        @include media($tablet-landscape) {
+          font-size: 33px;
+        }
+        @include media($tablet) {
+          font-size: 23px;
+          margin-left: 0px;
+        }
+      }
+      &:hover {
+        h4 {
+          color: $light-blue;
+        }
+        border: 1px solid $light-blue;
+
+      }
+      @include media($mobile) {
+        height: 105px;
+        margin: 0px 10px;
+        h4 {
+          line-height: 105px;
+          font-size: 20px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  @include media($mobile) {
+    margin-top: 0px;
+  }
+}
+.hero {
+  background: url("./assets/art/home.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+}
+.spacer {
+  height: calc(100vh - 284px);
+  position: relative;
+  padding-top: 20px;
+  @include outer-container();
+  #perth {
+    position: absolute;
+    bottom: 170px;
+    right: 0px;
+  }
+  @include media($mobile) {
+    display: none;
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+      height: calc(1024px - 284px);
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    height: calc(768px - 284px);
+  }
+}

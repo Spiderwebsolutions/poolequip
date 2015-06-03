@@ -1,0 +1,2088 @@
+/* CSS Document */
+/* Colors */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+/* line 4, assets/sass/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, assets/sass/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* General */
+/* line 22, assets/sass/style.scss */
+a {
+  text-decoration: none !important;
+  color: #6f6f6f; }
+
+/* line 26, assets/sass/style.scss */
+article {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 29, assets/sass/style.scss */
+body {
+  margin: 0px; }
+
+/* line 32, assets/sass/style.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Myriad', sans-serif;
+  letter-spacing: 2px;
+  color: white; }
+
+/* line 37, assets/sass/style.scss */
+hr {
+  border-top: 1px solid #ccc; }
+
+/* line 40, assets/sass/style.scss */
+p, span, div {
+  font-family: 'Myriad', sans-serif;
+  color: #6f6f6f; }
+
+/* line 44, assets/sass/style.scss */
+span {
+  display: inline; }
+
+/* line 47, assets/sass/style.scss */
+.wrap {
+  width: 75em;
+  margin: 0 auto; }
+
+@media screen and (max-width: 768px) {
+  /* line 52, assets/sass/style.scss */
+  address, button, h1, h2, h3, h4, h5, input, p, ul {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 58, assets/sass/style.scss */
+  img {
+    margin-left: 5px; } }
+
+/* Grid */
+/* line 65, assets/sass/style.scss */
+aside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 24.09639%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  aside:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 65, assets/sass/style.scss */
+    aside {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 32.53012%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      aside:last-child {
+        margin-right: 0; } }
+
+/* line 73, assets/sass/style.scss */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 78, assets/sass/style.scss */
+.content {
+  margin-top: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 83.13253%;
+  margin-left: 8.43373%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  .content:last-child {
+    margin-right: 0; }
+
+/* line 83, assets/sass/style.scss */
+.content-half {
+  float: left;
+  display: block;
+  margin-right: 1.44928%;
+  width: 49.27536%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  .content-half:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 83, assets/sass/style.scss */
+    .content-half {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .content-half:last-child {
+        margin-right: 0; } }
+
+/* line 89, assets/sass/style.scss */
+.half {
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 49.39759%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  .half:last-child {
+    margin-right: 0; }
+  /* line 78, assets/sass/neat/grid/_omega.scss */
+  .half:nth-child(2n) {
+    margin-right: 0; }
+  /* line 83, assets/sass/neat/grid/_omega.scss */
+  .half:nth-child(2n+1) {
+    clear: left; }
+  @media screen and (max-width: 480px) {
+    /* line 89, assets/sass/style.scss */
+    .half {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .half:last-child {
+        margin-right: 0; } }
+
+/* line 96, assets/sass/style.scss */
+.one_third {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 32.53012%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  .one_third:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 96, assets/sass/style.scss */
+    .one_third {
+      padding-left: 20px;
+      padding-right: 20px;
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 32.53012%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .one_third:last-child {
+        margin-right: 0; } }
+
+/* line 106, assets/sass/style.scss */
+.two_third {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 66.26506%; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  .two_third:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 106, assets/sass/style.scss */
+    .two_third {
+      padding-left: 20px;
+      padding-right: 20px;
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 32.53012%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .two_third:last-child {
+        margin-right: 0; } }
+
+/* Mixins */
+@font-face {
+  font-family: 'Myriad';
+  src: url("./assets/fonts/myriadpro-regular-webfont.eot");
+  src: url("./assets/fonts/myriadpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/myriadpro-regular-webfont.woff2") format("woff2"), url("./assets/fonts/myriadpro-regular-webfont.woff") format("woff"), url("./assets/fonts/myriadpro-regular-webfont.ttf") format("truetype"), url("./assets/fonts/myriadpro-regular-webfont.svg#webfontregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'icomoon';
+  src: url("./assets/fonts/icomoon.eot?1912ou");
+  src: url("./assets/fonts/icomoon.eot?#iefix1912ou") format("embedded-opentype"), url("./assets/fonts/icomoon.woff?1912ou") format("woff"), url("./assets/fonts/icomoon.ttf?1912ou") format("truetype"), url("./assets/fonts/icomoon.svg?1912ou#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 27, assets/sass/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 41, assets/sass/_fonts.scss */
+.icon-twitter:before {
+  content: "\f081"; }
+
+/* line 45, assets/sass/_fonts.scss */
+.icon-facebook:before {
+  content: "\f082"; }
+
+/* line 49, assets/sass/_fonts.scss */
+.icon-linkedin:before {
+  content: "\f08c"; }
+
+/* line 53, assets/sass/_fonts.scss */
+.icon-google:before {
+  content: "\f0d4"; }
+
+/* line 57, assets/sass/_fonts.scss */
+.icon-mail:before {
+  content: "\f0e0"; }
+
+/* line 61, assets/sass/_fonts.scss */
+.icon-circle:before {
+  content: "\f111"; }
+
+/* line 65, assets/sass/_fonts.scss */
+.icon-cart:before {
+  content: "\e93a"; }
+
+/* line 69, assets/sass/_fonts.scss */
+.icon-search:before {
+  content: "\e986"; }
+
+/* line 73, assets/sass/_fonts.scss */
+.icon-menu:before {
+  content: "\e9bd"; }
+
+/* line 77, assets/sass/_fonts.scss */
+.icon-phone:before {
+  content: "\e942"; }
+
+/* line 81, assets/sass/_fonts.scss */
+.icon-location:before {
+  content: "\e947"; }
+
+/* line 85, assets/sass/_fonts.scss */
+.icon-clock:before {
+  content: "\e94e"; }
+
+/* line 89, assets/sass/_fonts.scss */
+.icon-comment:before {
+  content: "\e970"; }
+
+/* line 1, assets/sass/_header.scss */
+nav {
+  background-color: #343538; }
+  /* line 3, assets/sass/_header.scss */
+  nav div {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+    nav div::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 5, assets/sass/_header.scss */
+    nav div ul {
+      float: left;
+      height: 45px;
+      margin: 0px;
+      text-decoration: none;
+      padding-left: 0px; }
+      /* line 11, assets/sass/_header.scss */
+      nav div ul .active {
+        background-color: #018cbc; }
+      /* line 14, assets/sass/_header.scss */
+      nav div ul li {
+        margin: 0px;
+        line-height: 45px;
+        padding: 13px 25px;
+        display: inline;
+        font-family: 'Myriad', sans-serif;
+        transition: all 0.5s ease; }
+        /* line 20, assets/sass/_header.scss */
+        nav div ul li a {
+          color: white; }
+        /* line 24, assets/sass/_header.scss */
+        nav div ul li:hover {
+          background-color: #018cbc; }
+          /* line 26, assets/sass/_header.scss */
+          nav div ul li:hover .active {
+            background-color: #343538; }
+        @media screen and (max-width: 480px) {
+          /* line 14, assets/sass/_header.scss */
+          nav div ul li {
+            padding: 13px 15px; } }
+    /* line 35, assets/sass/_header.scss */
+    nav div .icon-search {
+      color: white;
+      display: inline;
+      float: right;
+      padding: 14px 20px;
+      background-color: #303134;
+      left: 0px;
+      width: 56px;
+      position: relative;
+      transition: all 0.5s ease;
+      transition: width 0.25s;
+      -webkit-transition: width .25s;
+      -moz-transition: width 0.25s; }
+      /* line 48, assets/sass/_header.scss */
+      nav div .icon-search:hover {
+        background-color: black;
+        width: 250px; }
+      @media screen and (max-width: 480px) {
+        /* line 35, assets/sass/_header.scss */
+        nav div .icon-search {
+          display: none; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, assets/sass/_header.scss */
+    nav {
+      position: fixed;
+      z-index: 200;
+      width: 100%; }
+      /* line 61, assets/sass/_header.scss */
+      nav ul {
+        width: 100%; }
+        /* line 63, assets/sass/_header.scss */
+        nav ul li {
+          width: 25%; } }
+
+/* line 69, assets/sass/_header.scss */
+.logo {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+  .logo::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 71, assets/sass/_header.scss */
+  .logo img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 380px; }
+  /* line 77, assets/sass/_header.scss */
+  .logo .contact-cart {
+    text-align: right; }
+    /* line 79, assets/sass/_header.scss */
+    .logo .contact-cart .phone {
+      float: left;
+      display: block;
+      margin-right: 2.43902%;
+      width: 82.92683%; }
+      /* line 80, assets/sass/_header.scss */
+      .logo .contact-cart .phone a {
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        line-height: 164px;
+        color: #0e618f;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 35px; }
+        /* line 88, assets/sass/_header.scss */
+        .logo .contact-cart .phone a span {
+          top: 0px;
+          transition: all 0.5s ease;
+          color: #0e618f; }
+        /* line 94, assets/sass/_header.scss */
+        .logo .contact-cart .phone a:hover span {
+          color: #018cbc; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .logo .contact-cart .phone:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 1024px) {
+        /* line 79, assets/sass/_header.scss */
+        .logo .contact-cart .phone {
+          text-align: left;
+          float: left;
+          display: block;
+          margin-right: 2.43902%;
+          width: 65.85366%; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .logo .contact-cart .phone:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 79, assets/sass/_header.scss */
+        .logo .contact-cart .phone {
+          text-align: center;
+          padding-right: 10px;
+          float: left;
+          display: block;
+          margin-right: 1.20482%;
+          width: 100%; }
+          /* line 107, assets/sass/_header.scss */
+          .logo .contact-cart .phone a {
+            position: relative;
+            top: -25px;
+            font-size: 25px;
+            line-height: 50px; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .logo .contact-cart .phone:last-child {
+            margin-right: 0; } }
+    /* line 117, assets/sass/_header.scss */
+    .logo .contact-cart .cart {
+      float: left;
+      display: block;
+      margin-right: 2.43902%;
+      width: 14.63415%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .logo .contact-cart .cart:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        /* line 117, assets/sass/_header.scss */
+        .logo .contact-cart .cart {
+          display: none; } }
+      /* line 122, assets/sass/_header.scss */
+      .logo .contact-cart .cart span {
+        font-size: 30px;
+        line-height: 146px;
+        position: relative;
+        margin: 10px; }
+      /* line 128, assets/sass/_header.scss */
+      .logo .contact-cart .cart .icon-cart {
+        font-size: 24px;
+        padding: 12px 12px 12px 11px;
+        border-radius: 50%;
+        background-color: #0e618f;
+        color: white;
+        margin-left: 30px;
+        transition: all 0.2s ease; }
+        /* line 136, assets/sass/_header.scss */
+        .logo .contact-cart .cart .icon-cart:hover {
+          background-color: #018cbc;
+          color: #0e618f; }
+      /* line 141, assets/sass/_header.scss */
+      .logo .contact-cart .cart p {
+        position: relative;
+        display: inline;
+        font-size: 20px;
+        background: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding: 3px 8px 2px 9px;
+        top: -25px;
+        left: -29px;
+        text-align: center;
+        z-index: 100;
+        font-size: 17px;
+        font-weight: bold;
+        border: 1px solid rgba(14, 97, 143, 0.2); }
+      @media screen and (max-width: 480px) {
+        /* line 117, assets/sass/_header.scss */
+        .logo .contact-cart .cart {
+          display: block;
+          position: fixed;
+          z-index: 300;
+          bottom: -20px;
+          right: 10px; }
+          /* line 164, assets/sass/_header.scss */
+          .logo .contact-cart .cart p {
+            margin-left: 0px; } }
+      @media screen and (max-width: 1024px) {
+        /* line 117, assets/sass/_header.scss */
+        .logo .contact-cart .cart {
+          text-align: left;
+          float: left;
+          display: block;
+          margin-right: 2.43902%;
+          width: 31.70732%; }
+          /* line 170, assets/sass/_header.scss */
+          .logo .contact-cart .cart p {
+            margin-left: 0px; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .logo .contact-cart .cart:last-child {
+            margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 77, assets/sass/_header.scss */
+      .logo .contact-cart {
+        height: 10px;
+        text-align: left; }
+        /* line 179, assets/sass/_header.scss */
+        .logo .contact-cart .phone {
+          font-size: 15px; } }
+  @media screen and (max-width: 480px) {
+    /* line 69, assets/sass/_header.scss */
+    .logo {
+      padding-top: 30px; } }
+
+/* line 188, assets/sass/_header.scss */
+.category-headers {
+  height: 60px;
+  background-color: #0e618f; }
+  @media screen and (max-width: 480px) {
+    /* line 188, assets/sass/_header.scss */
+    .category-headers {
+      display: none; } }
+  /* line 194, assets/sass/_header.scss */
+  .category-headers div {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+    .category-headers div::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 196, assets/sass/_header.scss */
+    .category-headers div ul {
+      padding: 0px;
+      text-decoration: none;
+      table-layout: fixed;
+      width: 100%;
+      max-height: 60px !important; }
+      /* line 202, assets/sass/_header.scss */
+      .category-headers div ul li {
+        height: 60px;
+        padding: 0px;
+        width: calc(10% - 4px);
+        display: inline-block;
+        text-align: center;
+        line-height: 60px;
+        transition: all 0.2s ease; }
+        /* line 209, assets/sass/_header.scss */
+        .category-headers div ul li a {
+          font-size: 16px;
+          color: white; }
+        /* line 214, assets/sass/_header.scss */
+        .category-headers div ul li:hover {
+          background-color: #018cbc; }
+      /* line 218, assets/sass/_header.scss */
+      .category-headers div ul #c-1:hover a:after {
+        content: url("/poolequip/assets/art/cat-1.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 219, assets/sass/_header.scss */
+      .category-headers div ul #c-2:hover a:after {
+        content: url("/poolequip/assets/art/cat-2.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 220, assets/sass/_header.scss */
+      .category-headers div ul #c-3:hover a:after {
+        content: url("/poolequip/assets/art/cat-3.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 221, assets/sass/_header.scss */
+      .category-headers div ul #c-4:hover a:after {
+        content: url("/poolequip/assets/art/cat-4.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 222, assets/sass/_header.scss */
+      .category-headers div ul #c-5:hover a:after {
+        content: url("/poolequip/assets/art/cat-5.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 223, assets/sass/_header.scss */
+      .category-headers div ul #c-6:hover a:after {
+        content: url("/poolequip/assets/art/cat-6.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 224, assets/sass/_header.scss */
+      .category-headers div ul #c-7:hover a:after {
+        content: url("/poolequip/assets/art/cat-7.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 225, assets/sass/_header.scss */
+      .category-headers div ul #c-8:hover a:after {
+        content: url("/poolequip/assets/art/cat-8.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 226, assets/sass/_header.scss */
+      .category-headers div ul #c-9:hover a:after {
+        content: url("/poolequip/assets/art/cat-9.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 227, assets/sass/_header.scss */
+      .category-headers div ul #c-10:hover a:after {
+        content: url("/poolequip/assets/art/cat-10.png");
+        left: -40px;
+        top: 65px;
+        position: absolute;
+        z-index: 100; }
+      /* line 228, assets/sass/_header.scss */
+      .category-headers div ul .high {
+        background-color: #0e618f;
+        top: -5px;
+        border-radius: 5px;
+        position: relative;
+        height: 70px;
+        padding-top: 5px;
+        -webkit-box-shadow: 5px 0px 10px -4px rgba(12, 65, 94, 0.5), -5px 0px 10px -4px rgba(12, 65, 94, 0.5);
+        -moz-box-shadow: 5px 0px 10px -4px rgba(12, 65, 94, 0.5), -5px 0px 10px -4px rgba(12, 65, 94, 0.5);
+        box-shadow: 5px 0px 10px -4px rgba(12, 65, 94, 0.5), -5px 0px 10px -4px rgba(12, 65, 94, 0.5); }
+      /* line 237, assets/sass/_header.scss */
+      .category-headers div ul .low {
+        top: -5px;
+        position: relative; }
+      /* line 241, assets/sass/_header.scss */
+      .category-headers div ul .active {
+        background-color: #018cbc; }
+    @media screen and (max-width: 768px) {
+      /* line 246, assets/sass/_header.scss */
+      .category-headers div ul {
+        margin-left: 0px; }
+        /* line 249, assets/sass/_header.scss */
+        .category-headers div ul li a {
+          font-size: 13px; } }
+
+/* line 257, assets/sass/_header.scss */
+.category-mobile {
+  display: none;
+  text-align: center;
+  background: url("/poolequip/assets/art/suppliers.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 115px; }
+  /* line 266, assets/sass/_header.scss */
+  .category-mobile select {
+    width: 50%;
+    padding: 7px;
+    border: 1px solid #dddddd;
+    font-family: 'Myriad', sans-serif; }
+  @media screen and (max-width: 480px) {
+    /* line 257, assets/sass/_header.scss */
+    .category-mobile {
+      display: block; } }
+
+/* line 2, assets/sass/_home.scss */
+#home div {
+  margin-top: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 49.39759%;
+  margin-right: 0; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  #home div:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 2, assets/sass/_home.scss */
+    #home div {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      #home div:last-child {
+        margin-right: 0; } }
+  /* line 9, assets/sass/_home.scss */
+  #home div #c-1 {
+    background: url("/poolequip/assets/art/c-1.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 10, assets/sass/_home.scss */
+  #home div #c-2 {
+    background: url("/poolequip/assets/art/c-2.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 11, assets/sass/_home.scss */
+  #home div #c-3 {
+    background: url("/poolequip/assets/art/c-3.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 12, assets/sass/_home.scss */
+  #home div #c-4 {
+    background: url("/poolequip/assets/art/c-4.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 13, assets/sass/_home.scss */
+  #home div #c-5 {
+    background: url("/poolequip/assets/art/c-5.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 14, assets/sass/_home.scss */
+  #home div #c-6 {
+    background: url("/poolequip/assets/art/c-6.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 15, assets/sass/_home.scss */
+  #home div #c-7 {
+    background: url("/poolequip/assets/art/c-7.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 16, assets/sass/_home.scss */
+  #home div #c-8 {
+    background: url("/poolequip/assets/art/c-8.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 17, assets/sass/_home.scss */
+  #home div #c-9 {
+    background: url("/poolequip/assets/art/c-9.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 18, assets/sass/_home.scss */
+  #home div #c-10 {
+    background: url("/poolequip/assets/art/c-10.png") no-repeat right;
+    background-size: auto 100%; }
+  /* line 19, assets/sass/_home.scss */
+  #home div .category {
+    width: 95%;
+    margin: 10px;
+    height: 155px;
+    border: 1px solid #dddddd;
+    padding-left: 20px;
+    background-position: right;
+    transition: all 0.5s ease; }
+    /* line 27, assets/sass/_home.scss */
+    #home div .category img {
+      display: inline;
+      bottom: 155px;
+      left: 0px;
+      position: relative;
+      width: 100%; }
+    /* line 34, assets/sass/_home.scss */
+    #home div .category h4 {
+      letter-spacing: 3px;
+      display: inline;
+      display: inline;
+      color: #0e618f;
+      font-size: 40px;
+      line-height: 155px; }
+      @media screen and (max-width: 1024px) {
+        /* line 34, assets/sass/_home.scss */
+        #home div .category h4 {
+          font-size: 33px; } }
+      @media screen and (max-width: 768px) {
+        /* line 34, assets/sass/_home.scss */
+        #home div .category h4 {
+          font-size: 23px;
+          margin-left: 0px; } }
+    /* line 49, assets/sass/_home.scss */
+    #home div .category:hover {
+      border: 1px solid #018cbc; }
+      /* line 50, assets/sass/_home.scss */
+      #home div .category:hover h4 {
+        color: #018cbc; }
+    @media screen and (max-width: 480px) {
+      /* line 19, assets/sass/_home.scss */
+      #home div .category {
+        height: 105px;
+        margin: 0px 10px; }
+        /* line 59, assets/sass/_home.scss */
+        #home div .category h4 {
+          line-height: 105px;
+          font-size: 20px;
+          margin-left: 0px; } }
+@media screen and (max-width: 480px) {
+  /* line 1, assets/sass/_home.scss */
+  #home {
+    margin-top: 0px; } }
+
+/* line 71, assets/sass/_home.scss */
+.hero {
+  background: url("/poolequip/assets/art/home.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -100; }
+
+/* line 84, assets/sass/_home.scss */
+.spacer {
+  height: calc(100vh - 284px);
+  position: relative;
+  padding-top: 20px;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+  .spacer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 89, assets/sass/_home.scss */
+  .spacer #perth {
+    position: absolute;
+    bottom: 170px;
+    right: 0px; }
+  @media screen and (max-width: 480px) {
+    /* line 84, assets/sass/_home.scss */
+    .spacer {
+      display: none; } }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    /* line 84, assets/sass/_home.scss */
+    .spacer {
+      height: calc(1024px - 284px); } }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    /* line 84, assets/sass/_home.scss */
+    .spacer {
+      height: calc(768px - 284px); } }
+
+/* line 1, assets/sass/_footer.scss */
+.suppliers {
+  height: 190px;
+  background-color: #f6f6f6;
+  border-top: solid 1px #dddddd; }
+  @media screen and (max-width: 480px) {
+    /* line 1, assets/sass/_footer.scss */
+    .suppliers {
+      display: none; } }
+  /* line 8, assets/sass/_footer.scss */
+  .suppliers div {
+    background: url("/poolequip/assets/art/suppliers.png") no-repeat center;
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+    .suppliers div::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 11, assets/sass/_footer.scss */
+    .suppliers div .supplier {
+      cursor: pointer;
+      height: 190px;
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 15.66265%;
+      background-repeat: no-repeat;
+      transition: background 0.2s ease; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .suppliers div .supplier:last-child {
+        margin-right: 0; }
+      /* line 78, assets/sass/neat/grid/_omega.scss */
+      .suppliers div .supplier:nth-child(8n) {
+        margin-right: 0; }
+      /* line 83, assets/sass/neat/grid/_omega.scss */
+      .suppliers div .supplier:nth-child(8n+1) {
+        clear: left; }
+      @media screen and (max-width: 480px) {
+        /* line 11, assets/sass/_footer.scss */
+        .suppliers div .supplier {
+          float: left;
+          display: block;
+          margin-right: 1.20482%;
+          width: 24.09639%; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .suppliers div .supplier:last-child {
+            margin-right: 0; } }
+    /* line 22, assets/sass/_footer.scss */
+    .suppliers div #s-1 {
+      background: url("/poolequip/assets/art/s-1-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 25, assets/sass/_footer.scss */
+      .suppliers div #s-1:hover {
+        background: url("/poolequip/assets/art/s-1-c.png") no-repeat center; }
+    /* line 29, assets/sass/_footer.scss */
+    .suppliers div #s-2 {
+      background: url("/poolequip/assets/art/s-2-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 32, assets/sass/_footer.scss */
+      .suppliers div #s-2:hover {
+        background: url("/poolequip/assets/art/s-2-c.png") no-repeat center; }
+    /* line 36, assets/sass/_footer.scss */
+    .suppliers div #s-3 {
+      background: url("/poolequip/assets/art/s-3-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 39, assets/sass/_footer.scss */
+      .suppliers div #s-3:hover {
+        background: url("/poolequip/assets/art/s-3-c.png") no-repeat center; }
+    /* line 43, assets/sass/_footer.scss */
+    .suppliers div #s-4 {
+      background: url("/poolequip/assets/art/s-4-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 46, assets/sass/_footer.scss */
+      .suppliers div #s-4:hover {
+        background: url("/poolequip/assets/art/s-4-c.png") no-repeat center; }
+    /* line 50, assets/sass/_footer.scss */
+    .suppliers div #s-5 {
+      background: url("/poolequip/assets/art/s-5-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 53, assets/sass/_footer.scss */
+      .suppliers div #s-5:hover {
+        background: url("/poolequip/assets/art/s-5-c.png") no-repeat center; }
+    /* line 57, assets/sass/_footer.scss */
+    .suppliers div #s-6 {
+      background: url("/poolequip/assets/art/s-6-b.png") no-repeat center;
+      background-size: 100% auto; }
+      /* line 60, assets/sass/_footer.scss */
+      .suppliers div #s-6:hover {
+        background: url("/poolequip/assets/art/s-6-c.png") no-repeat center; }
+
+/* line 66, assets/sass/_footer.scss */
+footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #e9e9e9;
+  background: -webkit-radial-gradient(#333538, #1d1c1d);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#333538, #1d1c1d);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#333538, #1d1c1d);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#333538, #1d1c1d);
+  /* Standard syntax (must be last) */ }
+  /* line 75, assets/sass/_footer.scss */
+  footer a, footer p, footer span {
+    color: #e9e9e9; }
+    /* line 77, assets/sass/_footer.scss */
+    footer a:hover, footer p:hover, footer span:hover {
+      color: #0e618f; }
+  /* line 81, assets/sass/_footer.scss */
+  footer span {
+    font-size: 35px;
+    margin-bottom: 10px; }
+  /* line 85, assets/sass/_footer.scss */
+  footer p {
+    margin: 8px;
+    font-size: 20px; }
+    /* line 88, assets/sass/_footer.scss */
+    footer p span {
+      font-size: 20px; }
+  @media screen and (max-width: 480px) {
+    /* line 93, assets/sass/_footer.scss */
+    footer p {
+      font-size: 16px; }
+      /* line 95, assets/sass/_footer.scss */
+      footer p span {
+        font-size: 16px; }
+    /* line 99, assets/sass/_footer.scss */
+    footer span {
+      font-size: 30px; } }
+
+/* line 104, assets/sass/_footer.scss */
+.footer-links {
+  text-align: center;
+  border-top: solid 1px #8d8d8d;
+  background-color: #0f1622;
+  padding: 20px; }
+  /* line 109, assets/sass/_footer.scss */
+  .footer-links p {
+    color: #e9e9e9;
+    font-family: 'Myriad', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding-bottom: 5px; }
+  /* line 116, assets/sass/_footer.scss */
+  .footer-links ul {
+    padding: 0px; }
+    /* line 118, assets/sass/_footer.scss */
+    .footer-links ul li {
+      color: white;
+      font-family: 'Myriad', sans-serif;
+      list-style-type: none;
+      display: inline;
+      font-size: 16px;
+      margin-left: 10px; }
+      /* line 125, assets/sass/_footer.scss */
+      .footer-links ul li a {
+        font-stretch: ultra-condensed;
+        color: white; }
+      /* line 129, assets/sass/_footer.scss */
+      .footer-links ul li:before {
+        content: "\f111\00a0\00a0\00a0";
+        font-family: 'icomoon';
+        font-size: 12px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1; }
+      /* line 140, assets/sass/_footer.scss */
+      .footer-links ul li:first-child:before {
+        content: none; }
+
+/* line 2, assets/sass/_about.scss */
+#about h2 {
+  color: #0e618f; }
+/* line 5, assets/sass/_about.scss */
+#about ul {
+  margin-top: 20px;
+  width: 100%;
+  list-style: none;
+  padding-left: 0px; }
+  /* line 10, assets/sass/_about.scss */
+  #about ul li {
+    padding: 20px;
+    background: #dddddd;
+    margin-bottom: 4px; }
+    @media screen and (max-width: 480px) {
+      /* line 10, assets/sass/_about.scss */
+      #about ul li {
+        width: 90%; } }
+  /* line 18, assets/sass/_about.scss */
+  #about ul #title {
+    margin-right: 0px;
+    padding: 20px;
+    background: #0e618f;
+    color: white;
+    margin-left: 60px;
+    width: calc(90% - 11px); }
+    /* line 25, assets/sass/_about.scss */
+    #about ul #title:before {
+      font-family: 'icomoon';
+      margin: 0px 18px 0 -80px;
+      color: white;
+      content: "\e970";
+      background: #018cbc;
+      background-size: 60px 60px;
+      padding: 22px 20px 21px 22px;
+      top: 2px;
+      position: relative;
+      border-right: 4px solid white; }
+    @media screen and (max-width: 768px) {
+      /* line 18, assets/sass/_about.scss */
+      #about ul #title {
+        width: calc(90% - 28px); } }
+    @media screen and (max-width: 480px) {
+      /* line 18, assets/sass/_about.scss */
+      #about ul #title {
+        width: calc(90% - 60px);
+        font-size: 13px;
+        padding: 20px 10px; }
+        /* line 44, assets/sass/_about.scss */
+        #about ul #title:before {
+          margin: 0px 18px 0 -70px;
+          border-right: 0px solid white; } }
+
+/* line 2, assets/sass/_contact.scss */
+#contact h2 {
+  color: #0e618f; }
+/* line 5, assets/sass/_contact.scss */
+#contact span {
+  margin-right: 10px; }
+/* line 8, assets/sass/_contact.scss */
+#contact input {
+  font-family: 'Myriad', sans-serif;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 49.5%; }
+  @media screen and (max-width: 480px) {
+    /* line 8, assets/sass/_contact.scss */
+    #contact input {
+      width: 90%; } }
+/* line 17, assets/sass/_contact.scss */
+#contact #email {
+  float: right; }
+/* line 20, assets/sass/_contact.scss */
+#contact textarea {
+  font-family: 'Myriad', sans-serif;
+  padding: 10px;
+  width: 100%; }
+/* line 25, assets/sass/_contact.scss */
+#contact button {
+  background-color: #018cbc;
+  border: 0px;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease;
+  border-bottom: 4px solid #0e618f; }
+  /* line 33, assets/sass/_contact.scss */
+  #contact button:hover {
+    cursor: pointer;
+    background-color: #0e618f;
+    border-bottom: 4px solid #0e4270; }
+@media screen and (max-width: 480px) {
+  /* line 1, assets/sass/_contact.scss */
+  #contact {
+    text-align: center; }
+    /* line 41, assets/sass/_contact.scss */
+    #contact ul {
+      list-style: none;
+      padding: 0px; }
+    /* line 45, assets/sass/_contact.scss */
+    #contact #email {
+      float: center; }
+    /* line 48, assets/sass/_contact.scss */
+    #contact textarea {
+      margin-left: 8px;
+      width: 90%; }
+    /* line 52, assets/sass/_contact.scss */
+    #contact button {
+      width: 90%; }
+    /* line 55, assets/sass/_contact.scss */
+    #contact iframe {
+      display: none; } }
+
+/* line 1, assets/sass/_shop.scss */
+.container {
+  margin-top: 0px; }
+  /* line 3, assets/sass/_shop.scss */
+  .container .shop-title {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 74.6988%;
+    margin-right: 0;
+    background-color: #018cbc;
+    height: 70px;
+    margin-bottom: 10px; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .container .shop-title:last-child {
+      margin-right: 0; }
+    /* line 9, assets/sass/_shop.scss */
+    .container .shop-title h2 {
+      padding-left: 20px;
+      line-height: 70px;
+      color: white;
+      display: inline; }
+    /* line 15, assets/sass/_shop.scss */
+    .container .shop-title p {
+      display: inline;
+      color: #235672; }
+    @media screen and (max-width: 480px) {
+      /* line 3, assets/sass/_shop.scss */
+      .container .shop-title {
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 100%;
+        height: auto; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .shop-title:last-child {
+          margin-right: 0; }
+        /* line 22, assets/sass/_shop.scss */
+        .container .shop-title h2 {
+          margin: 0px;
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 0px;
+          line-height: 55px; }
+        /* line 30, assets/sass/_shop.scss */
+        .container .shop-title p {
+          margin: 0px;
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 0px;
+          margin-bottom: 10px; } }
+    @media screen and (max-width: 768px) {
+      /* line 3, assets/sass/_shop.scss */
+      .container .shop-title {
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 66.26506%;
+        margin-right: 0; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .shop-title:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 3, assets/sass/_shop.scss */
+      .container .shop-title {
+        margin-top: 10px;
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 100%;
+        margin-right: 0; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .shop-title:last-child {
+          margin-right: 0; } }
+  /* line 49, assets/sass/_shop.scss */
+  .container .products {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 74.6988%;
+    margin-right: 0; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .container .products:last-child {
+      margin-right: 0; }
+    /* line 52, assets/sass/_shop.scss */
+    .container .products .shop-product {
+      float: left;
+      display: block;
+      margin-right: 1.6129%;
+      width: 23.79032%;
+      border: 1px solid #dddddd;
+      min-height: 287px;
+      margin-bottom: 10px;
+      padding: 5px;
+      text-align: center; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      .container .products .shop-product:last-child {
+        margin-right: 0; }
+      /* line 78, assets/sass/neat/grid/_omega.scss */
+      .container .products .shop-product:nth-child(4n) {
+        margin-right: 0; }
+      /* line 83, assets/sass/neat/grid/_omega.scss */
+      .container .products .shop-product:nth-child(4n+1) {
+        clear: left; }
+      /* line 60, assets/sass/_shop.scss */
+      .container .products .shop-product h3 {
+        margin-top: 0px;
+        color: #6f6f6f;
+        font-size: 14px;
+        letter-spacing: 1px; }
+      /* line 66, assets/sass/_shop.scss */
+      .container .products .shop-product button {
+        border-radius: 3px;
+        width: 90%;
+        border: 0px;
+        color: white;
+        font-family: 'Myriad', sans-serif;
+        font-weight: bold;
+        padding: 2px; }
+        /* line 74, assets/sass/_shop.scss */
+        .container .products .shop-product button:hover {
+          cursor: pointer; }
+      /* line 78, assets/sass/_shop.scss */
+      .container .products .shop-product span {
+        color: #018cbc;
+        font-weight: bold;
+        line-height: 25px; }
+      /* line 83, assets/sass/_shop.scss */
+      .container .products .shop-product .email-price {
+        background-color: #fe7343;
+        border-bottom: 3px solid #ae5333;
+        transition: all 0.2s ease; }
+        /* line 87, assets/sass/_shop.scss */
+        .container .products .shop-product .email-price:hover {
+          background-color: #d66d3f;
+          border-bottom: 3px solid #894530; }
+      /* line 92, assets/sass/_shop.scss */
+      .container .products .shop-product .view-item {
+        margin-top: 5px;
+        padding: 8px;
+        background-color: #018cbc;
+        border-bottom: 3px solid #0e618f;
+        transition: all 0.2s ease; }
+        /* line 98, assets/sass/_shop.scss */
+        .container .products .shop-product .view-item:hover {
+          background-color: #0e618f;
+          border-bottom: 3px solid #0e4a74; }
+      @media screen and (max-width: 1024px) {
+        /* line 52, assets/sass/_shop.scss */
+        .container .products .shop-product {
+          float: left;
+          display: block;
+          margin-right: 1.6129%;
+          width: 32.25806%; }
+          /* line 134, assets/sass/style.scss */
+          .container .products .shop-product:nth-child(4n) {
+            margin-right: 1.20482%; }
+          /* line 135, assets/sass/style.scss */
+          .container .products .shop-product:nth-child(4n+1) {
+            clear: none; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .container .products .shop-product:last-child {
+            margin-right: 0; }
+          /* line 78, assets/sass/neat/grid/_omega.scss */
+          .container .products .shop-product:nth-child(3n) {
+            margin-right: 0; }
+          /* line 83, assets/sass/neat/grid/_omega.scss */
+          .container .products .shop-product:nth-child(3n+1) {
+            clear: left; } }
+      @media screen and (max-width: 768px) {
+        /* line 52, assets/sass/_shop.scss */
+        .container .products .shop-product {
+          float: left;
+          display: block;
+          margin-right: 1.81818%;
+          width: 49.09091%; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .container .products .shop-product:last-child {
+            margin-right: 0; }
+          /* line 134, assets/sass/style.scss */
+          .container .products .shop-product:nth-child(3n) {
+            margin-right: 1.20482%; }
+          /* line 135, assets/sass/style.scss */
+          .container .products .shop-product:nth-child(3n+1) {
+            clear: none; }
+          /* line 78, assets/sass/neat/grid/_omega.scss */
+          .container .products .shop-product:nth-child(2n) {
+            margin-right: 0; }
+          /* line 83, assets/sass/neat/grid/_omega.scss */
+          .container .products .shop-product:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (max-width: 480px) {
+        /* line 52, assets/sass/_shop.scss */
+        .container .products .shop-product {
+          float: left;
+          display: block;
+          margin-right: 1.20482%;
+          width: 100%; }
+          /* line 89, assets/sass/neat/grid/_span-columns.scss */
+          .container .products .shop-product:last-child {
+            margin-right: 0; } }
+    @media screen and (max-width: 768px) {
+      /* line 49, assets/sass/_shop.scss */
+      .container .products {
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 66.26506%;
+        margin-right: 0; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .products:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 49, assets/sass/_shop.scss */
+      .container .products {
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 100%; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .products:last-child {
+          margin-right: 0; } }
+  /* line 125, assets/sass/_shop.scss */
+  .container .pagination {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 74.6988%;
+    margin-left: 25.3012%;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 20px; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .container .pagination:last-child {
+      margin-right: 0; }
+    /* line 131, assets/sass/_shop.scss */
+    .container .pagination ul {
+      padding-left: 0px;
+      list-style: none; }
+      /* line 134, assets/sass/_shop.scss */
+      .container .pagination ul li {
+        display: inline; }
+        /* line 136, assets/sass/_shop.scss */
+        .container .pagination ul li a {
+          padding: 5px 10px;
+          background: #0e618f;
+          color: white;
+          transition: all 0.2s ease; }
+          /* line 141, assets/sass/_shop.scss */
+          .container .pagination ul li a:hover {
+            background: #018cbc; }
+          @media screen and (max-width: 480px) {
+            /* line 136, assets/sass/_shop.scss */
+            .container .pagination ul li a {
+              padding: 2px 6px; } }
+      /* line 150, assets/sass/_shop.scss */
+      .container .pagination ul .active a {
+        border-radius: 50%;
+        background: #018cbc; }
+    @media screen and (max-width: 480px) {
+      /* line 125, assets/sass/_shop.scss */
+      .container .pagination {
+        float: left;
+        display: block;
+        margin-right: 1.20482%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 89, assets/sass/neat/grid/_span-columns.scss */
+        .container .pagination:last-child {
+          margin-right: 0; } }
+  /* line 161, assets/sass/_shop.scss */
+  .container .details, .container .specifications, .container .reviews {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 100%; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .container .details:last-child, .container .specifications:last-child, .container .reviews:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    /* line 1, assets/sass/_shop.scss */
+    .container {
+      margin: 10px; } }
+
+/* line 1, assets/sass/_breadcrumbs.scss */
+.breadcrumbs {
+  margin-top: 20px;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, assets/sass/bourbon/addons/_clearfix.scss */
+  .breadcrumbs::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 4, assets/sass/_breadcrumbs.scss */
+  .breadcrumbs ul {
+    padding-left: 0px;
+    list-style: none;
+    overflow: hidden; }
+    /* line 8, assets/sass/_breadcrumbs.scss */
+    .breadcrumbs ul li {
+      float: left;
+      margin-right: 10px; }
+      /* line 11, assets/sass/_breadcrumbs.scss */
+      .breadcrumbs ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0 10px 20px;
+        background: #018cbc;
+        position: relative;
+        display: block;
+        float: left; }
+        /* line 19, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li a:after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 25px solid transparent;
+          border-bottom: 25px solid transparent;
+          border-left: 20px solid #018cbc;
+          position: absolute;
+          top: 50%;
+          margin-top: -25px;
+          left: 100%;
+          z-index: 2; }
+          @media screen and (max-width: 768px) {
+            /* line 19, assets/sass/_breadcrumbs.scss */
+            .breadcrumbs ul li a:after {
+              border-top: 13px solid transparent;
+              border-bottom: 14px solid transparent;
+              border-left: 10px solid #018cbc;
+              z-index: 2;
+              left: calc(100% - 1px);
+              top: 50%;
+              margin-top: -14px; }
+              /* line 41, assets/sass/_breadcrumbs.scss */
+              .breadcrumbs ul li a:after:hover:after {
+                border-left: 20px solid #0e618f; } }
+        /* line 47, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li a:before {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-bottom: 30px solid transparent;
+          border-left: 25px solid white;
+          position: absolute;
+          top: 50%;
+          margin-top: -30px;
+          margin-left: -5px;
+          left: 110%;
+          z-index: 1; }
+          @media screen and (max-width: 768px) {
+            /* line 47, assets/sass/_breadcrumbs.scss */
+            .breadcrumbs ul li a:before {
+              border-top: 19px solid transparent;
+              border-bottom: 19px solid transparent;
+              border-left: 13px solid white;
+              margin-top: -19px;
+              margin-left: -5px; }
+              /* line 68, assets/sass/_breadcrumbs.scss */
+              .breadcrumbs ul li a:before:hover:after {
+                border-left: 13px solid #0e618f; } }
+        /* line 74, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li a:hover {
+          background-color: #0e618f; }
+          /* line 76, assets/sass/_breadcrumbs.scss */
+          .breadcrumbs ul li a:hover:after {
+            border-left: 20px solid #0e618f; }
+        @media screen and (max-width: 1024px) {
+          /* line 11, assets/sass/_breadcrumbs.scss */
+          .breadcrumbs ul li a {
+            padding: 7px 0 7px 17px;
+            font-size: 13px; } }
+        @media screen and (max-width: 768px) {
+          /* line 11, assets/sass/_breadcrumbs.scss */
+          .breadcrumbs ul li a {
+            font-size: 11px;
+            padding: 7px 7px 7px 12px; }
+            /* line 88, assets/sass/_breadcrumbs.scss */
+            .breadcrumbs ul li a:hover {
+              background-color: #0e618f; }
+              /* line 90, assets/sass/_breadcrumbs.scss */
+              .breadcrumbs ul li a:hover:after {
+                border-left: 20px solid #0e618f; } }
+      /* line 97, assets/sass/_breadcrumbs.scss */
+      .breadcrumbs ul li:last-child a {
+        padding-right: 10px; }
+        /* line 99, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li:last-child a:before {
+          border: 0px; }
+        /* line 102, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li:last-child a:after {
+          border: 0px; }
+      /* line 107, assets/sass/_breadcrumbs.scss */
+      .breadcrumbs ul li .empty {
+        display: none; }
+      @media screen and (max-width: 768px) {
+        /* line 8, assets/sass/_breadcrumbs.scss */
+        .breadcrumbs ul li {
+          margin: 10px 0px;
+          padding: 0px 1px; } }
+    @media screen and (max-width: 1024px) {
+      /* line 4, assets/sass/_breadcrumbs.scss */
+      .breadcrumbs ul {
+        margin: 0px; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, assets/sass/_breadcrumbs.scss */
+    .breadcrumbs {
+      display: none; } }
+
+/* line 1, assets/sass/_aside.scss */
+aside {
+  float: left;
+  display: block;
+  margin-right: 1.20482%;
+  width: 24.09639%;
+  margin-top: 0px; }
+  /* line 89, assets/sass/neat/grid/_span-columns.scss */
+  aside:last-child {
+    margin-right: 0; }
+  /* line 4, assets/sass/_aside.scss */
+  aside .price-range {
+    padding: 0px 20px 20px 20px;
+    text-align: center; }
+    /* line 7, assets/sass/_aside.scss */
+    aside .price-range p {
+      margin: 20px; }
+    /* line 10, assets/sass/_aside.scss */
+    aside .price-range button {
+      display: inline;
+      border-radius: 4px;
+      position: inherit; }
+      @media screen and (max-width: 768px) {
+        /* line 10, assets/sass/_aside.scss */
+        aside .price-range button {
+          margin-top: 10px; } }
+    /* line 18, assets/sass/_aside.scss */
+    aside .price-range #amount {
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      width: 100px;
+      color: #6f6f6f !important;
+      font-size: 16px; }
+    /* line 26, assets/sass/_aside.scss */
+    aside .price-range #slider-range {
+      background: #dddddd;
+      height: 5px;
+      padding: 4px; }
+    /* line 31, assets/sass/_aside.scss */
+    aside .price-range .ui-slider-range {
+      padding: 0px;
+      height: 9px;
+      background: none;
+      background-color: #018cbc;
+      border-top: solid 2px #0e618f; }
+    /* line 38, assets/sass/_aside.scss */
+    aside .price-range .ui-slider-handle {
+      border-radius: 50%;
+      background: none;
+      background-color: white; }
+      /* line 42, assets/sass/_aside.scss */
+      aside .price-range .ui-slider-handle:focus {
+        outline: 0; }
+  /* line 47, assets/sass/_aside.scss */
+  aside b {
+    display: inline;
+    font-weight: bold;
+    font-size: 16px; }
+  /* line 52, assets/sass/_aside.scss */
+  aside form {
+    font-size: 16px;
+    color: #4f4f4f;
+    font-weight: bold; }
+    /* line 56, assets/sass/_aside.scss */
+    aside form em {
+      font-size: 12px;
+      font-style: normal;
+      color: #6f6f6f; }
+  /* line 62, assets/sass/_aside.scss */
+  aside div {
+    border: 1px solid #dddddd;
+    margin-bottom: 10px; }
+    /* line 65, assets/sass/_aside.scss */
+    aside div div {
+      padding: 15px 20px;
+      border: 0px;
+      margin-bottom: 0px;
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        /* line 65, assets/sass/_aside.scss */
+        aside div div {
+          padding: 15px 10px; } }
+      /* line 73, assets/sass/_aside.scss */
+      aside div div input[type="text"] {
+        width: 100%; }
+        @media screen and (max-width: 768px) {
+          /* line 73, assets/sass/_aside.scss */
+          aside div div input[type="text"] {
+            margin-left: 0px; } }
+      /* line 79, assets/sass/_aside.scss */
+      aside div div input[type="checkbox"] {
+        display: none; }
+      /* line 82, assets/sass/_aside.scss */
+      aside div div label {
+        display: block;
+        margin-bottom: 6px; }
+      /* line 86, assets/sass/_aside.scss */
+      aside div div input[type="checkbox"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background: url("./assets/art/check_radio_sheet.png") left top no-repeat;
+        cursor: pointer; }
+      /* line 95, assets/sass/_aside.scss */
+      aside div div input[type="checkbox"]:checked + label span {
+        background: url("./assets/art/check_radio_sheet.png") -19px top no-repeat; }
+      /* line 98, assets/sass/_aside.scss */
+      aside div div input {
+        margin-right: 5px;
+        border: 2px solid #dddddd;
+        border-radius: 4px;
+        padding: 5px 40px 5px 5px;
+        display: inline-block; }
+        /* line 104, assets/sass/_aside.scss */
+        aside div div input:focus {
+          outline: 0; }
+      /* line 108, assets/sass/_aside.scss */
+      aside div div button {
+        color: #6f6f6f;
+        display: inline;
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        padding: 6px 12px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border: 0px;
+        background-color: #dddddd;
+        transition: all 0.2s ease; }
+        /* line 119, assets/sass/_aside.scss */
+        aside div div button span {
+          color: white; }
+        /* line 123, assets/sass/_aside.scss */
+        aside div div button:hover {
+          color: white;
+          cursor: pointer;
+          background-color: #018cbc; }
+        @media screen and (max-width: 768px) {
+          /* line 108, assets/sass/_aside.scss */
+          aside div div button {
+            margin: 0px;
+            right: 10px; } }
+  /* line 135, assets/sass/_aside.scss */
+  aside h3 {
+    margin: 0px;
+    color: #6f6f6f;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: Myriad, sans-serif; }
+  /* line 145, assets/sass/_aside.scss */
+  aside .rating label {
+    background: url("/poolequip/assets/art/stars.png") no-repeat top left;
+    width: 89px;
+    height: 13px;
+    margin-bottom: 9px; }
+  /* line 151, assets/sass/_aside.scss */
+  aside .rating label[for='4-star'] {
+    background-position: 0 -14px; }
+  /* line 154, assets/sass/_aside.scss */
+  aside .rating label[for='3-star'] {
+    background-position: 0 -28px; }
+  /* line 157, assets/sass/_aside.scss */
+  aside .rating label[for='2-star'] {
+    background-position: 0 -42px; }
+  /* line 160, assets/sass/_aside.scss */
+  aside .rating label[for='1-star'] {
+    background-position: 0 -56px; }
+  /* line 163, assets/sass/_aside.scss */
+  aside .rating p {
+    display: inline;
+    width: 210px;
+    position: relative;
+    left: 72px;
+    top: -2px; }
+    /* line 169, assets/sass/_aside.scss */
+    aside .rating p em {
+      display: inline;
+      position: relative;
+      top: -20px;
+      right: -73px; }
+  @media screen and (max-width: 768px) {
+    /* line 177, assets/sass/_aside.scss */
+    aside .rating p {
+      left: 68px;
+      width: 100%;
+      margin-left: 0px; }
+      /* line 181, assets/sass/_aside.scss */
+      aside .rating p em {
+        right: -73px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1, assets/sass/_aside.scss */
+    aside {
+      border-left: 5px solid transparent; } }
+  @media screen and (max-width: 768px) {
+    /* line 1, assets/sass/_aside.scss */
+    aside {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 32.53012%; }
+      /* line 89, assets/sass/neat/grid/_span-columns.scss */
+      aside:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, assets/sass/_aside.scss */
+    aside {
+      display: none; } }
+
+/* line 1, assets/sass/_modal.scss */
+.ui-dialog {
+  z-index: 400;
+  padding: 0px;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8); }
+  /* line 6, assets/sass/_modal.scss */
+  .ui-dialog .ui-dialog-titlebar {
+    background: none;
+    border: 0px;
+    background-color: #018cbc;
+    border-radius: 0px; }
+    /* line 11, assets/sass/_modal.scss */
+    .ui-dialog .ui-dialog-titlebar span {
+      color: white; }
+  /* line 15, assets/sass/_modal.scss */
+  .ui-dialog input {
+    width: 100%;
+    font-family: 'Myriad', sans-serif;
+    padding: 4px 10px;
+    margin-bottom: 5px;
+    font-size: 16px; }
+  /* line 22, assets/sass/_modal.scss */
+  .ui-dialog button {
+    margin-top: 10px;
+    background-color: #fe7343;
+    border: 0px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    transition: all 0.2s ease;
+    border-bottom: 4px solid #ae5333;
+    font-size: 15px;
+    border-radius: 3px; }
+  @media screen and (max-width: 1024px) {
+    /* line 35, assets/sass/_modal.scss */
+    .ui-dialog input, .ui-dialog button {
+      margin: 10px 0px; } }
+
+/* line 40, assets/sass/_modal.scss */
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px; }
+
+/* line 1, assets/sass/_product.scss */
+.product {
+  text-align: center; }
+  /* line 3, assets/sass/_product.scss */
+  .product h1 {
+    margin-top: 20px;
+    background-color: #018cbc;
+    padding: 21px;
+    font-size: 20px; }
+    @media screen and (max-width: 768px) {
+      /* line 3, assets/sass/_product.scss */
+      .product h1 {
+        margin: 10px 0px; } }
+  /* line 12, assets/sass/_product.scss */
+  .product h3 {
+    margin: 0px;
+    color: #6f6f6f;
+    background-color: #f5f5f5;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: Myriad, sans-serif; }
+  /* line 20, assets/sass/_product.scss */
+  .product button {
+    border-radius: 3px;
+    width: 100%;
+    border: 0px;
+    color: white;
+    font-family: 'Myriad', sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    background-color: #fe7343;
+    border-bottom: 3px solid #ae5333;
+    transition: all 0.2s ease;
+    margin: 20px 0px;
+    padding: 10px; }
+    /* line 33, assets/sass/_product.scss */
+    .product button:hover {
+      cursor: pointer;
+      background-color: #d66d3f;
+      border-bottom: 3px solid #894530; }
+    @media screen and (max-width: 480px) {
+      /* line 20, assets/sass/_product.scss */
+      .product button {
+        width: calc(100% - 40px);
+        margin: 10px 20px; } }
+  /* line 43, assets/sass/_product.scss */
+  .product .product-image {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 375px; }
+    @media screen and (max-width: 480px) {
+      /* line 43, assets/sass/_product.scss */
+      .product .product-image {
+        width: 90%;
+        height: auto; } }
+  /* line 53, assets/sass/_product.scss */
+  .product .sample-image {
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 1px solid #dddddd; }
+    /* line 59, assets/sass/_product.scss */
+    .product .sample-image:hover {
+      border: 1px solid #018cbc; }
+  /* line 63, assets/sass/_product.scss */
+  .product .price {
+    float: left;
+    display: block;
+    margin-right: 2.43902%;
+    width: 48.78049%;
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .product .price:last-child {
+      margin-right: 0; }
+    /* line 68, assets/sass/_product.scss */
+    .product .price span {
+      margin: 0px;
+      width: 100%;
+      padding: 20px;
+      border: 0px;
+      text-align: center;
+      font-family: Myriad, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #018cbc; }
+    @media screen and (max-width: 768px) {
+      /* line 80, assets/sass/_product.scss */
+      .product .price span {
+        padding: 29px; } }
+    @media screen and (max-width: 480px) {
+      /* line 63, assets/sass/_product.scss */
+      .product .price {
+        width: calc(100% - 40px);
+        margin: 10px 20px; } }
+  /* line 90, assets/sass/_product.scss */
+  .product .shipping {
+    float: left;
+    display: block;
+    margin-right: 2.43902%;
+    width: 48.78049%;
+    margin-right: 0;
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .product .shipping:last-child {
+      margin-right: 0; }
+    /* line 96, assets/sass/_product.scss */
+    .product .shipping h4 {
+      text-align: center;
+      color: #fe7343; }
+    @media screen and (max-width: 480px) {
+      /* line 90, assets/sass/_product.scss */
+      .product .shipping {
+        width: calc(100% - 40px);
+        margin: 10px 20px; } }
+  /* line 105, assets/sass/_product.scss */
+  .product .description {
+    border: 1px solid #dddddd;
+    text-align: left;
+    margin-top: 10px; }
+    /* line 109, assets/sass/_product.scss */
+    .product .description div {
+      padding: 10px 20px; }
+      /* line 111, assets/sass/_product.scss */
+      .product .description div b {
+        color: #018cbc; }
+    @media screen and (max-width: 480px) {
+      /* line 105, assets/sass/_product.scss */
+      .product .description {
+        width: calc(100% - 40px);
+        margin: 10px 20px; } }
+  /* line 120, assets/sass/_product.scss */
+  .product .details {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    margin-top: 30px; }
+    /* line 89, assets/sass/neat/grid/_span-columns.scss */
+    .product .details:last-child {
+      margin-right: 0; }
+    /* line 125, assets/sass/_product.scss */
+    .product .details h3 {
+      padding-left: 20px;
+      display: inline-block;
+      z-index: 100;
+      border: 1px solid #dddddd;
+      border-bottom: 0px;
+      transition: all 0.3s ease;
+      background-color: #dddddd; }
+      /* line 133, assets/sass/_product.scss */
+      .product .details h3:hover {
+        background-color: #e9e9e9;
+        cursor: pointer; }
+    /* line 138, assets/sass/_product.scss */
+    .product .details .review {
+      border-left: 0px; }
+    /* line 141, assets/sass/_product.scss */
+    .product .details .active {
+      background-color: whitesmoke; }
+    /* line 144, assets/sass/_product.scss */
+    .product .details div {
+      padding: 0px 20px;
+      border: 1px solid #dddddd; }
+    /* line 148, assets/sass/_product.scss */
+    .product .details form {
+      margin-bottom: 20px; }
+    /* line 151, assets/sass/_product.scss */
+    .product .details ul {
+      list-style: none;
+      padding-left: 0px; }
+      /* line 154, assets/sass/_product.scss */
+      .product .details ul li {
+        background: url("/poolequip/assets/art/star-5.png") no-repeat top left;
+        height: 14px;
+        padding-left: 93px;
+        left: -20px;
+        position: relative;
+        margin-top: 5px; }
+    /* line 163, assets/sass/_product.scss */
+    .product .details .star-4 {
+      background: url("/poolequip/assets/art/star-4.png") no-repeat top left; }
+    /* line 165, assets/sass/_product.scss */
+    .product .details .star-3 {
+      background: url("/poolequip/assets/art/star-3.png") no-repeat top left; }
+    /* line 167, assets/sass/_product.scss */
+    .product .details .star-2 {
+      background: url("/poolequip/assets/art/star-2.png") no-repeat top left; }
+    /* line 169, assets/sass/_product.scss */
+    .product .details .star-1 {
+      background: url("/poolequip/assets/art/star-1.png") no-repeat top left; }
+    /* line 172, assets/sass/_product.scss */
+    .product .details span:before {
+      content: "";
+      display: block;
+      background: url("/poolequip/assets/art/blank-star.png") no-repeat;
+      width: 13px;
+      height: 14px;
+      float: left;
+      margin: 0 6px 0 0; }
+    /* line 182, assets/sass/_product.scss */
+    .product .details input[type="text"] {
+      margin-right: 5px;
+      border: 2px solid #dddddd;
+      border-radius: 4px;
+      padding: 5px 40px 5px 5px;
+      width: 50%; }
+      @media screen and (max-width: 480px) {
+        /* line 182, assets/sass/_product.scss */
+        .product .details input[type="text"] {
+          margin: 10px 20px;
+          width: 90%;
+          margin-left: 0px; } }
+    /* line 194, assets/sass/_product.scss */
+    .product .details input[type="submit"] {
+      border-radius: 3px;
+      margin-top: 5px;
+      padding: 8px 18px;
+      background-color: #018cbc;
+      border: 0px;
+      border-bottom: 3px solid #0e618f;
+      color: white;
+      transition: all 0.2s ease; }
+      /* line 203, assets/sass/_product.scss */
+      .product .details input[type="submit"]:hover {
+        background-color: #0e618f;
+        border-bottom: 3px solid #0e507b; }
+      @media screen and (max-width: 480px) {
+        /* line 194, assets/sass/_product.scss */
+        .product .details input[type="submit"] {
+          margin-left: 0px; } }
+    /* line 211, assets/sass/_product.scss */
+    .product .details .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      border: 0px;
+      display: inline;
+      padding-left: 0px; }
+      @media screen and (max-width: 480px) {
+        /* line 211, assets/sass/_product.scss */
+        .product .details .rating {
+          margin: 10px 20px 0px 0px;
+          display: block; } }
+    /* line 222, assets/sass/_product.scss */
+    .product .details .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em; }
+    /* line 227, assets/sass/_product.scss */
+    .product .details .rating > span:hover:before,
+    .product .details .rating > span:hover ~ span:before {
+      background: url("/poolequip/assets/art/solid-star.png") no-repeat; }
+    @media screen and (max-width: 480px) {
+      /* line 120, assets/sass/_product.scss */
+      .product .details {
+        width: calc(100% - 40px);
+        margin: 10px 20px; }
+        /* line 234, assets/sass/_product.scss */
+        .product .details ul {
+          margin-left: 0px; }
+          /* line 236, assets/sass/_product.scss */
+          .product .details ul li {
+            height: auto; } }
+
+/*# sourceMappingURL=style.css.map */

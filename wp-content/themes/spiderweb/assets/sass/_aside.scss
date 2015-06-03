@@ -1,0 +1,197 @@
+aside {
+  @include span-columns(3);
+  margin-top: 0px;
+  .price-range {
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    p {
+      margin: 20px;
+    }
+    button {
+      display: inline;
+      border-radius: 4px;
+      position: inherit;
+      @include media($tablet) {
+        margin-top: 10px;
+      }
+    }
+    #amount {
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      width: 100px;
+      color: $text !important;
+      font-size: 16px;
+    }
+    #slider-range {
+      background: $border;
+      height: 5px;
+      padding: 4px;
+    }
+    .ui-slider-range {
+      padding: 0px;
+      height: 9px;
+      background: none;
+      background-color: $light-blue;
+      border-top: solid 2px $blue;
+    }
+    .ui-slider-handle {
+      border-radius: 50%;
+      background: none;
+      background-color: white;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  b {
+    display: inline;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  form {
+    font-size: 16px;
+    color: #4f4f4f;
+    font-weight: bold;
+    em {
+      font-size: 12px;
+      font-style: normal;
+      color: $text;
+    }
+  }
+  div {
+    border: 1px solid $border;
+    margin-bottom: 10px;
+    div {
+      padding: 15px 20px;
+      border: 0px;
+      margin-bottom: 0px;
+      position: relative;
+      @include media($tablet) {
+        padding: 15px 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        @include media($tablet) {
+          margin-left: 0px;
+        }
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+      input[type="checkbox"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background: url('./assets/art/check_radio_sheet.png') left top no-repeat;
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked + label span {
+        background: url('./assets/art/check_radio_sheet.png') -19px top no-repeat;
+      }
+      input {
+        width: 100%;
+        margin-right: 5px;
+        border: 2px solid $border;
+        border-radius: 4px;
+        padding: 5px 40px 5px 5px;
+        display: inline-block;
+        &:focus {
+          outline: 0;
+        }
+      }
+      button {
+        color: $text;
+        display: inline;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        padding: 6px 12px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border: 0px;
+        background-color: $border;
+        span {
+          color: white;
+        }
+        transition: all 0.2s ease;
+        &:hover {
+          color: white;
+          cursor: pointer;
+          background-color: $light-blue;
+        }
+        @include media($tablet) {
+          margin: 0px;
+          right: 10px;
+        }
+      }
+    }
+  }
+  h3 {
+    margin: 0px;
+    color: $text;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-family: Myriad, sans-serif;
+  }
+  .rating {
+    label {
+      background: url('./assets/art/stars.png') no-repeat top left;
+      width: 89px;
+      height: 13px;
+      margin-bottom: 9px;
+    }
+    label[for='4-star'] {
+      background-position: 0 -14px;
+    }
+    label[for='3-star'] {
+      background-position: 0 -28px;
+    }
+    label[for='2-star'] {
+      background-position: 0 -42px;
+    }
+    label[for='1-star'] {
+      background-position: 0 -56px;
+    }
+    p {
+      display: inline;
+      width: 210px;
+      position: relative;
+      left: 72px;
+      top: -2px;
+      em {
+        display: inline;
+        position: relative;
+        top: -20px;
+        right: -73px;
+      }
+    }
+    @include media($tablet) {
+      p {
+        left: 68px;
+        width: 100%;
+        margin-left: 0px;
+        em {
+          right: -73px;
+        }
+      }
+    }
+  }
+  @include media($tablet-landscape) {
+    border-left: 5px solid transparent;
+  }
+  @include media($tablet) {
+    @include span-columns(4);
+  }
+  @include media($mobile) {
+    display: none;
+  }
+}
